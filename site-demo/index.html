@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espaço de Beleza — Demonstração</title>
+  <meta name="description" content="Demonstração de site para salão de beleza.">
+  <style>
+    :root{--ink:#2f2330;--muted:#6f6270;--rose:#b85c7a;--cream:#fff8f5;--card:#fff;}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit}.wrap{width:min(1080px,92%);margin:auto}.top{padding:18px 0;font-size:.85rem;color:var(--muted);text-align:center}.hero{padding:76px 0 64px;background:linear-gradient(135deg,#fff1f4,#f9e7dc)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;color:var(--rose);font-weight:700}
+    h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.04;margin:14px 0}.lead{font-size:1.12rem;color:var(--muted);max-width:56ch}.button{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--rose);color:white;text-decoration:none;font-weight:700;margin-top:14px}
+    .visual{min-height:300px;border-radius:28px;background:radial-gradient(circle at 30% 25%,#fff 0 16%,transparent 17%),linear-gradient(145deg,#d895a9,#ad5d79);box-shadow:0 20px 50px #b85c7a33;display:grid;place-items:center;color:white;text-align:center;padding:25px}.visual strong{font-size:1.6rem}
+    section{padding:58px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:22px}.section-head h2{margin:0;font-size:2rem}.muted{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid #f0dfe1;border-radius:18px;padding:24px;box-shadow:0 10px 30px #6b3d4c0d}.card h3{margin:10px 0 6px}.icon{font-size:1.8rem}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.info{background:#fff;border-radius:18px;padding:24px;border:1px solid #f0dfe1}.info p{margin:.4rem 0}.cta{background:#332633;color:white;border-radius:22px;padding:34px}.cta .button{background:#f0a8bb;color:#332633}.footer{padding:30px 0;color:var(--muted);font-size:.9rem;border-top:1px solid #ecd9dc}
+    @media(max-width:760px){.hero-grid,.about{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{padding-top:48px}.visual{min-height:220px}.section-head{display:block}}
+  </style>
+</head>
+<body>
+  <div class="top">Demonstração Facilitae · conteúdo ilustrativo para aprovação</div>
+  <header class="hero"><div class="wrap hero-grid"><div>
+    <div class="eyebrow">Seu cuidado, seu momento</div>
+    <h1>Beleza com calma, do seu jeito.</h1>
+    <p class="lead">Uma apresentação simples para mostrar seus serviços, facilitar o contato e deixar as informações importantes em um só lugar.</p>
+    <a class="button" href="#contato">Quero agendar</a>
+  </div><div class="visual"><div><strong>Espaço de Beleza</strong><br>Nome e fotos reais entram aqui após a aprovação.</div></div></div></header>
+  <main>
+    <section><div class="wrap"><div class="section-head"><div><div class="eyebrow">Serviços</div><h2>O que você procura hoje?</h2></div><div class="muted">Consulte horários e disponibilidade.</div></div>
+      <div class="cards"><article class="card"><div class="icon">✦</div><h3>Cabelos</h3><p class="muted">Cortes, escova e cuidados personalizados.</p></article><article class="card"><div class="icon">◌</div><h3>Unhas</h3><p class="muted">Manicure e pedicure para sua rotina.</p></article><article class="card"><div class="icon">♡</div><h3>Produção</h3><p class="muted">Maquiagem e preparação para ocasiões especiais.</p></article></div>
+    </div></section>
+    <section><div class="wrap about"><div><div class="eyebrow">Sobre o espaço</div><h2>Um atendimento pensado para você.</h2><p class="muted">Este texto é uma área reservada para a história do salão, diferenciais e informações verificadas fornecidas pelo estabelecimento.</p></div><div class="info"><p><strong>Horário:</strong> a confirmar</p><p><strong>Endereço:</strong> a confirmar</p><p><strong>Instagram:</strong> a confirmar</p><p><strong>WhatsApp:</strong> botão configurado após autorização</p></div></div></section>
+    <section id="contato"><div class="wrap"><div class="cta"><div class="eyebrow" style="color:#f0a8bb">Contato</div><h2>Vamos conversar?</h2><p>Troque este botão pelo WhatsApp comercial e facilite o próximo passo para suas clientes.</p><a class="button" href="#" onclick="return false">WhatsApp comercial</a></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap">Demonstração criada pela Facilitae. Informações reais serão inseridas somente com autorização do estabelecimento.</div></footer>
+</body>
+</html>
